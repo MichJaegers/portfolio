@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/ozl1cwb.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>portfolio</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#scroll-portfolio">PORTFOLIO</a></li>
+            <li><a href="#scroll-about">ABOUT</a></li>
+            <!--geen contact meer
+           <li><a href="#scroll-contact">CONTACT</a></li>-->
+        </ul>
+        <div class="button">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <span class="ball"></span>
+            </label>
+        </div>
+    </header>
+
+    <div class="intro">
+        <h1 class="my-intro">Hiya! ik ben Michelle of Mich als je wilt. neem eens een duik in mijn portfolio en kom
+            achter mijn werk en persoonlijkheid</h1>
+        <img class="intro-img" src="assets/pfp.jpeg" alt="mijn kop">
+        <img class="nijntje" src="assets/nijntje png.png" alt="miffy">
+    </div>
+    <div id="scroll-portfolio"></div>
+
+    <div class="work-img">
+        <div class="img-1">
+            <h3>coding for kids</h3>
+            <div>
+                <p class="nohover">(web)design & coding</p>
+                <p class="overlay"> is coding useful for kids, and how can we tell people about the EGD without using
+                    only statistics. <br>click for more information</p>
+            </div>
+        </div>
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('modal1')">&times;</span>
+                <div class="popup-text">
+                    <h2>CodiVerse</h2>
+                    <a href="https://mia-dp-2223.github.io/team10/">CodiVerse website</a>
+                    <div class="modal-details">
+                        <p>kinderen laten coderen is verassend genoeg een controversieel onderwerp. willen we ze al op
+                            zo een vroege leeftijd aan een scherm vast laten plakken?> deze vraag hebben we in een
+                            groepje van 3 beantwoord doormiddel van een documentaire die verderop in de website staat.
+                            ook hebben we cursusjes gegeven aan middelbare scholieren waarin wij ze de basis van p5
+                            hebben geleerd, hiervoor is uiteindelijk een website gekomen waarop ouders ook het werk van
+                            hun kinderen kunnen zien</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-2">
+            <h3>lees festival</h3>
+            <div>
+                <p class="nohover">design</p>
+                <p class="overlay">how to get kids to read? quotes!
+                    <br>click for more information
+                </p>
+            </div>
+
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('modal2')">&times;</span>
+                <div class="popup-text">
+                    <h2>kinderen lezen steeds minder</h2>
+                    <div class="modal-details">
+                        <img src="assets/billboard-3.jpg">
+                        <p>
+                            voor dit school project was de opdracht om doormiddel van een fictief leesfestival kinderen
+                            hun interesse voor lezen opnieuw op te wekken (wij moesten ze naar het festival toe lokken).
+                            wij hebben hiervoor meerdere interviews afgelegd, bronnen onderzoek gedaan en meer...</p>
+                        <img src="assets/billboard-4.jpg" alt="Foto">
+                        <p>uit het onderzoek was gebleken dat de doelgroep het fijn vond om simpele designs te zien. ook
+                            probeerden we ze aan te spreken doormiddel van uitdagende tekst </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="img-3">
+            <h3>21 days</h3>
+            <div>
+                <p class="nohover">Storytelling</p>
+                <p class="overlay">collaboratie met CBS
+                    <br>click for more information
+                </p>
+            </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('modal3')">&times;</span>
+                <div class="popup-text">
+                    <h2> CBS Storytelling </h2>
+                    <a href="https://mia-mms-2324.github.io/team12/home.html">multi media story, sadly this is not
+                        responsive!</a>
+                    <p>samen met het CBS heb ik in groepsverband een multi media story in elkaar gezet. het
+                        onderwerp
+                        wat wij specifiek gekozen hadden was vervoer. om de statistieken op een interessante wijze
+                        weer
+                        te geven hebben wij een soort mini game ontwikkeld waarin de keuzes die jij maakt impact
+                        hebben
+                        op de wereld om je heen, zodat je kan zien hoeveel je nu daadwerkelijk uitstoot</p>
+                </div>
+            </div>
+    </div>
+
+    <div class="img-4">
+        <h3>random work</h3>
+        <div>
+            <p class="nohover">photography, graphic design, video editing</p>
+            <p class="overlay"> mijn eigen creatieve insteek buiten school werk om
+                <br>click for more information
+            </p>
+        </div>
+
+    </div>
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('modal4')">&times;</span>
+            <div class="popup-text">
+                <h2>some of my work</h2>
+
+                <img src="assets/nmixx jiwoo.png">
+                <img src="assets/itaewon class.png">
+                <img src="assets/IMG_2790.JPG" alt="foto">
+                <p>I have been video editing for 6 years now starting with final cut pro and eventually making my
+                    way to
+                    after effects. I've also enjoyed taking pictures of all the pretty things around me for quite
+                    some
+                    while</p>
+                <video id="modalVideo" controls>
+                    <source
+                        src="https://player.vimeo.com/progressive_redirect/playback/839005511/rendition/1080p/file.mp4?loc=external&signature=7fcb9651a2ad5243c09336f1d0ae3ccf4784d447def6c94339323dfe4b4c345a"
+                        type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="scroll-about"></div>
+    <div class="container">
+        <div class="skills">
+            <div class="about-me">
+                <h2>More about me</h2>
+                <p>iech zeg hoi allemaol, zoals eerder vernoemd ik ben Michelle. ben 22 jaar maar dat kan nog
+                    veranderen, denk dat dit volgend jaar gebeurd. ik vind het leuk om verschillende programma's te
+                    leren en ben dus een beginner in blender, unreal engine, photoshop. ik kan inmiddels goed overweg
+                    met illustrator en voornamelijk after effects/premiere pro. websites coderen is helaas niet mijn
+                    expertise. <br><br> ik vind het leuk om op veel verschillende ideeen te komen en deze ook weer op
+                    verschillende manieren uit te werken, of dit nu posters, social media posts, videos of zelfs games
+                    zijn je noemt het maar en ik ben bereid om eraan te werken! <br><br> ik vind dingen zoals gamen,
+                    muziek luisteren, films kijken, knutselen en pokemon kaarten verzamelen leuk. ik ben gek op nijntje,
+                    loopy, kpop, pochacco en mijn 2 katten misty en mercy!
+                </p>
+            </div>
+            <div class="skills-blocks">
+                <h2>My skills</h2>
+                <h4>transition editor</h4>
+                <h4>after effects</h4>
+                <h4>veel interesses</h4>
+                <h4>creatief</h4>
+                <h4>humor</h4>
+                <h4>luister graag</h4>
+                <h4>beginner 3D</h4>
+                <h4>adobe</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="AVD">
+        <div class="container">
+            <h2>My video work</h2>
+            <div class="videoCont">
+                <button id="playButton" class="paused">
+                    <img src="assets/play.png" alt="Play" class="playIcon">
+                    <img src="assets/pause.png" alt="Pause" class="pauseIcon">
+                </button>
+                <div class="skipButton">
+                    <img id="skipButton" class="skipButton" src="assets/forward.png" alt="Skip 10s">
+                </div>
+                <video id="videoPlayer">
+                    <source
+                        src="https://player.vimeo.com/progressive_redirect/playback/839042596/rendition/1080p/file.mp4?loc=external&signature=c9a040903afb3f85670a172af437642ebbee4c8fc6e344d25b117e2a1c22829f"
+                        type="video/mp4">
+                </video>
+            </div>
+            <!--vimeo sub cancelled :( maar 1 video die is blijven staan helaas
+                 <div class="diff-video">
+                <button class="btnVideo"
+                    data-src="https://player.vimeo.com/progressive_redirect/playback/839042596/rendition/1080p/file.mp4?loc=external&signature=c9a040903afb3f85670a172af437642ebbee4c8fc6e344d25b117e2a1c22829f"
+                    preload="none">coding?</button>
+                <button class="btnVideo"
+                    data-src=""
+                    preload="none" autostart="false">documentary intro</button>
+                <button class="btnVideo"
+                    data-src=""
+                    preload="none">stayc edit</button>
+                <button class="btnVideo"
+                    data-src=""
+                    preload="none">SW edit</button>
+            </div>
+        </div>-->
+        </div>
+
+        <!--geen contact mogelijkheid, is voor de sier
+   <div id="scroll-contact"></div>
+    <div class="container">
+        <div class="content-booking">
+            <div id="booking-inhoud" class="booking-inhoud">
+                <h2>contact or book me</h2>
+                <p>send a mail or book me please im desperate</p>
+                <input class="Messages" type="text" id="message-input" placeholder="Message">
+                <input class="Email" type="email" id="email-input" placeholder="Email">
+                <button id="send-button">Send</button>
+            <div class="booking">
+    <p>Date</p>
+    <input type="date" id="booking-date" name="booking-date">
+    <p>Time</p>
+    <input type="time" id="booking-time" name="booking-time" min="09:00" max="18:00" required>
+    <button id="booking-button">Book!</button>
+</div>
+
+<div class="popup" id="book-popup">
+    <div class="popup-content">
+        <span class="close-button" onclick="closeModal('book-popup')">&times;</span>
+        <div class="popup-text">
+            <h2>haaii! thankyew </h2>
+
+            <div class="popup-details">
+                <img src="assets/book.jpeg" alt="Foto">
+                <p>danke schön mein herr</p>
+                <h3 id="popup-time">Time</h3>
+                <h3 id="popup-date">Date</h3>
+                <a>Mich de biest</a>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>

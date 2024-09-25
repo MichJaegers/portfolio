@@ -1,0 +1,1083 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,
+s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,
+th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	transition: background-color 0.5s ease;
+	font-family: "acumin-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+header {
+	background-color: #333399;
+	text-align: center;
+	list-style: none;
+	font-weight: 700;
+	font-style: normal;
+	height: 100px;
+	z-index: 1;
+	transition: background 0.2s linear;
+}
+
+.dark header {
+	background-color: #58637c;
+}
+
+.dark footer {
+	background-color: #58637c;
+}
+
+.dark .popup-text h1 {
+	color: #000000;
+}
+
+.dark .popup-text p {
+	color: #000000;
+}
+
+.dark .popup-text a {
+	color: #000000;
+}
+
+.dark .booking p {
+	color: black;
+}
+
+.dark header li a {
+	color: white;
+}
+
+.dark p {
+	color: white;
+}
+
+.dark h1 {
+	color: white;
+}
+
+.dark h2 {
+	color: white;
+}
+
+/* Header styling */
+header li {
+	display: inline;
+}
+
+header ul {
+	padding-top: 30px;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	margin: 0 30px;
+	font-family: "acumin-pro", sans-serif;
+}
+
+header.dark header a {
+	color: #fff;
+}
+
+body.dark {
+	background-color: #000000;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.button {
+	float: right;
+}
+
+.checkbox-label {
+	width: 100px;
+	height: 43px;
+	border-radius: 50px;
+	position: relative;
+	padding: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: -40px 140px 0 0;
+	border: 4px solid black;
+}
+
+.checkbox-label .ball {
+	background-color: #000000;
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	left: -1px;
+	top: 0px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+	transform: translateX(58px);
+}
+
+
+
+h1 {
+	font-size: 35px;
+}
+
+h2 {
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+}
+
+p {
+	font-size: 20px;
+	width: 700px;
+	padding-bottom: 3rem;
+	margin: 0 auto;
+}
+
+/* intro */
+.intro {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.my-intro {
+	grid-column: 1;
+	grid-row: 1;
+	width: 500px;
+	font-size: 50px;
+	transform: translate(60%, 20%);
+	top: 50%;
+	left: 50%;
+}
+
+.intro-img {
+	grid-column: 2;
+	grid-row: 1;
+	width: 352px;
+	height: 352px;
+	border-radius: 50%;
+	grid-area: 1 / 2 / 2 / 3;
+	margin-left: 4rem;
+}
+
+.nijntje {
+	width: auto;
+	height: 75px;
+	grid-area: 1/2/2/4;
+}
+
+/* images of my work with grid */
+.work-img {
+	grid-auto-flow: column;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	height: 1000px;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	justify-content: center;
+	align-content: center;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+/* hover */
+.overlay {
+	opacity: 0;
+	position: absolute;
+	transition: opacity 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	height: 100%;
+	pointer-events: none;
+}
+
+.nohover {
+	opacity: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	height: 100%;
+	pointer-events: none;
+}
+
+.img-1:hover .nohover,
+.img-2:hover .nohover,
+.img-3:hover .nohover,
+.img-4:hover .nohover {
+	opacity: 0;
+}
+
+.img-1:hover .overlay,
+.img-2:hover .overlay,
+.img-3:hover .overlay,
+.img-4:hover .overlay {
+	
+	opacity: 1;
+	position: relative;
+	margin-top: -200px;
+}
+
+.work-img h3 {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.work-img p {
+	color: white;
+	width: 400px;
+	text-align: center;
+	padding-top: 150px;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.img-2 p,
+.img-3 p {
+	max-width: 200px;
+	text-align: center;
+}
+
+.img-1 {
+	grid-column: 1 / 3;
+	grid-row: 1;
+	background-image: url(../assets/geleen.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 100%;
+}
+
+.img-2 {
+	grid-column: 3;
+	grid-row: 1;
+	background-image: url(../assets/billboard-1.jpg);
+	background-position: 70% center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 100%;
+}
+
+.img-3 {
+	grid-column: 4;
+	grid-row: 1;
+	background-image: url(../assets/met\ de\ seizoenen\ mee.jpeg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 100%;
+}
+
+.img-4 {
+	grid-column: 1 / 5;
+	grid-row: 2;
+	background-image: url(../assets/korea.jpeg);
+	background-position: center 60%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 100%;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	padding-top: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	overflow-y: initial !important
+}
+.open {
+	display: block;
+}
+
+.modal-content p {
+	color: black;
+	text-shadow: none;
+	padding-top: 1rem;
+}
+
+.modal-content {
+	background: white;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	padding-bottom: 1rem;
+	max-height: calc(100vh - 200px);
+    overflow-y: auto;
+	transition: overflow-y 0.3s ease;
+}
+
+.modal-details {
+	text-align: center;
+}
+
+.modal-details input {
+	border: none;
+}
+
+.modal-details img {
+	max-height: 500px;
+	max-width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2rem;
+}
+
+.close-button {
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.modal-button {
+	margin-left: 250px;
+	margin-top: 220px;
+}
+
+#modalVideo {
+	width: 500px;
+	height: 300px;
+	padding-bottom: 10rem;
+
+}
+
+/* skills bit */
+.skills {
+	height: 600px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+}
+
+
+.skills h4 {
+	display: inline-block;
+	border: 3px solid #000;
+	border-radius: 20px;
+	padding: 10px;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #425d69;
+	color: white;
+}
+
+.skills-blocks {
+	grid-column: 2;
+	grid-row: 2/3;
+}
+
+.about-me {
+	grid-column: 1;
+	grid-row: 2;
+	width: 400px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.about-me p {
+	width: 400px;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* video */
+#playButton {
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-10%,-50%);
+	transition: ease 500ms all;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#playButton.playing .pauseIcon {
+	display: block;
+}
+
+#playButton.paused .playIcon {
+	display: block;
+}
+
+.playIcon,
+.pauseIcon {
+	display: none;
+	width: 3vw;
+	height: 3vw;
+	text-shadow: 0 0 4px #00FF9C;
+}
+
+.btnVideo {
+	background: #425d69;
+	color: white;
+	border: 3px solid #000;
+	border-radius: 20px;
+	padding: 10px;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	width: 20%;
+	transition: background-color 0.7s
+}
+
+.skipButton {
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	right: 0;
+    bottom: 0;
+	transition: ease 500ms all;
+	z-index: 2;
+	cursor: pointer;
+	text-shadow: 0 0 4px #00FF9C;
+}
+
+.diff-video {
+	width: 80%;
+	margin-left: 20%;
+	padding-top: 3rem;
+}
+
+.videoCont {
+	position: relative;
+}
+
+.avd {
+	display: flex;
+}
+
+#videoPlayer {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+/* booking */
+.content-booking {
+	padding-bottom: 3rem;
+}
+.booking h2 {
+	font-size: 30px;
+}
+
+.booking {
+	text-align: center;
+	padding-top: 3rem;
+}
+
+.booking-cont {
+	padding-top: 3rem;
+}
+
+.booking-inhoud {
+	text-align: center;
+}
+
+.booking-inhoud input {
+	border: 3px solid black;
+}
+
+.Messages {
+	margin-top: 20px;
+	height: 130px;
+	width: 70%;
+}
+
+.Email {
+	margin-top: 20px;
+	margin-right: 20px;
+	height: 50px;
+	width: 50%;
+}
+
+button {
+	background: #425d69;
+	border: none;
+	border-radius: 50px;
+	color: white;
+	width: 150px;
+	height: 50px;
+	border: 3px solid black;
+}
+
+.booking {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	border: 3px solid black;
+	width: 80%;
+	height: 120px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.booking p {
+	margin-top: 5%;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.booking input[type="date"],
+.booking input[type="time"] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	border: 3px solid black;
+	padding: 5px;
+	width: 300px;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.popup-content.fullscreen {
+	overflow-y: inherit;
+}
+
+.popup-content {
+	background: white;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+
+.popup-details {
+	text-align: center;
+}
+
+.popup-details input {
+	margin-top: 15px;
+	border: none;
+}
+
+.popup-details img {
+	max-width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.close-button {
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.booking-button {
+	margin-left: 270px;
+}
+
+#popup-time {
+	font-size: 20px;
+	text-align: center;
+	width: 100px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#popup-date {
+	font-size: 20px;
+	text-align: center;
+	width: 200px;
+    height: 50px;
+    margin: 0 auto;
+	padding-bottom: 10rem;
+}
+
+
+/* responsive */
+@media (min-width:576px) and (max-width:849px){
+	.checkbox-label{
+		height: 25px;
+		width: 50px;
+		margin: -35px;
+		margin-right: 5px;
+	}
+	.ball {
+			width: 35px !important;
+			height: 35px !important;
+			margin: 0 140px 0 0;
+	}
+	.checkbox:checked+.checkbox-label .ball {
+		transform: translateX(28px);
+	}
+
+	.intro {
+		padding-bottom: 2rem;
+		height: 100%;
+	}
+
+	.intro-img {
+		width: 200px;
+		height: 200px;
+		justify-self: center;
+		transform: translate(0%);
+	}
+	.my-intro {
+		font-size: 30px;
+		transform: translate(30%, 30%);
+		top: 50%;
+		left: 50%;
+		width: 250px;
+	}
+
+	header a {
+		font-size: 20px;
+	}
+
+	.work-img {
+		width: 500px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		padding-bottom: 0px;
+	}
+
+	.img-1 {
+		grid-column: 1 / 4;
+		grid-row: 1;
+	}
+
+	.img-2 {
+		grid-column: 1 / 2;
+		grid-row: 2;
+
+	}
+
+	.img-3 {
+		grid-column: 2 / 4;
+		grid-row: 2;
+	}
+
+	.img-4 {
+		grid-column: 1 / 4;
+		grid-row: 3;
+	}
+	.about-me p {
+		font-size: 18px;
+		width: 100%;
+		height: auto;
+	}
+
+	.about-me {
+		width: 200px;
+		margin: 0 auto;
+		transform: translate(0%);
+		margin: 0 auto;
+		overflow:hidden;
+		white-space: normal;
+		word-wrap: break-word;
+	}
+
+	.skills {
+		padding-bottom: 2rem;
+		padding-top: 0px;
+		justify-content: center;
+		height: 700px;
+	}
+
+	.skills-blocks {
+		width: 250px;
+		overflow: hidden;
+		transform: translate(0%);
+		margin: 0 auto;
+	}
+
+	.AVD {
+		padding: 0px 20px;
+		display: flex;
+	}
+	.booking-inhoud p {
+		width: 400px;
+	}
+.playIcon {
+	width: 8vw;
+	height: 8vw;
+}
+
+.skipButton {
+	width: 8vw;
+    height: 8vw;
+	}
+}
+
+
+@media  (min-width: 850px) and (max-width: 1200px) {
+	
+	.checkbox-label{
+		height: 25px;
+		width: 50px;
+		margin: -35px;
+		margin-right: 5px;
+	}
+	.ball {
+			width: 35px !important;
+			height: 35px !important;
+			margin: 0 140px 0 0;
+	}
+	.checkbox:checked+.checkbox-label .ball {
+		transform: translateX(28px);
+	}
+
+	.intro {
+		padding-bottom: 2rem;
+		height: 100%;
+	}
+
+	.intro-img {
+		width: 252px;
+		height: 252px;
+		justify-self: center;
+		transform: translate(0%);
+	}
+	.my-intro {
+		font-size: 40px;
+		transform: translate(30%, 30%);
+		top: 50%;
+		left: 50%;
+		width: 400px;
+	}
+
+	header a {
+		font-size: 25px;
+	}
+
+	.work-img {
+		width: 800px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.img-1 {
+		grid-column: 1 / 4;
+		grid-row: 1;
+	}
+
+	.img-2 {
+		grid-column: 1 / 2;
+		grid-row: 2;
+
+	}
+
+	.img-3 {
+		grid-column: 2 / 4;
+		grid-row: 2;
+	}
+
+	.img-4 {
+		grid-column: 1 / 4;
+		grid-row: 3;
+	}
+
+	.about-me p {
+		font-size: 18px;
+	}
+	.about-me {
+		width: 300px;
+		height: 600px;
+		margin: 0 auto;
+		overflow: visible;
+		padding-right: 2rem;
+	}
+
+	.skills {
+		padding-bottom: 2rem;
+		padding-top: 3rem;
+	}
+
+	.skills-blocks {
+		width: 400px;
+		overflow: hidden;
+	}
+
+	.AVD {
+		padding: 0px 50px;
+		display: flex;
+	}
+	.playIcon {
+		width: 5vw;
+		height: 5vw;
+	}
+	
+	.skipButton {
+		width: 5vw;
+		height: 5vw;
+		}
+
+}
+
+
+@media screen and (min-width:300px) and (max-width: 576px) {
+	body {
+		overflow-x: hidden;
+	}
+	.booking-inhoud p {
+		width: 150px;
+	}
+	.booking-inhoud img {
+width: 200px;
+height: 100%;
+	}
+	.modal-content img {
+width: 200px;
+height: 100%;
+	}
+	.modal-content p {
+		width: 150px;
+		font-size: 15px;
+	}
+	header a {
+		font-size: 15px;
+		margin: 0 2px;
+	}
+	.checkbox-label{
+		height: 10px;
+		width: 20px;
+		margin: -20px;
+		margin-right: 15px;
+	}
+	.ball {
+			width: 20px !important;
+			height: 20px !important;
+			margin: 0 10px 0 0;
+	}
+	.checkbox:checked+.checkbox-label .ball {
+		transform: translateX(15px);
+	}
+	.work-img {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		width: 400px;
+		margin: 0 auto;
+		padding-top: 40px;
+	}
+
+	.img-1 {
+		grid-column: 1;
+		grid-row: 1;
+		height: auto;
+	}
+
+	.img-2 {
+		grid-column: 1;
+		grid-row: 2;
+		height: auto;
+	}
+
+	.img-3 {
+		grid-column: 1;
+		grid-row: 3;
+		height: auto;
+	}
+
+	.img-4 {
+		grid-column: 1;
+		grid-row: 4;
+		height: auto;
+	}
+
+	.overlay {
+		font-size: 10px;
+	}
+
+	.nohover {
+		font-size: 10px;
+	}
+
+	.playIcon {
+		width: 5vw;
+		height: 5vw;
+		position: fixed;
+
+	}
+
+	.skipButton {
+    width: 5vw;
+    height: 5vw;
+}
+	
+	button {
+		width: 30%;
+		height: 20%;
+	}
+	.btnVideo {
+		border-radius: 20px;
+		padding: 2px;
+		width: 20%;
+	}
+	
+
+	.about-me {
+		width: 300px;
+		font-size: 18px;
+		justify-self: center;
+		transform: translate(0%);
+		margin: 0 auto;
+	}
+
+	.skills {
+		padding-bottom: 2rem;
+		padding-top:0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;	
+		justify-content: center;	
+	}
+
+	.skills-blocks {
+		width: 300px;
+		justify-self: center;
+		transform: translate(0%);
+		margin: 0 auto;
+	}
+
+	h4 {
+		font-size: 10px;
+	}
+
+	.AVD {
+		padding: 0px 25px;
+		width: 100% - 150px;
+		display: flex;
+	}
+
+	.intro-img {
+		grid-column: 1;
+		grid-row: 1;
+		width: 200px;
+		height: 200px;
+		justify-self: center;
+		transform: translate(-10%);
+	}
+
+	.my-intro {
+		grid-column: 1;
+		grid-row: 2;
+		width: 200px;
+		font-size: 20px;
+		padding-top: 2rem;
+		justify-self: center;
+		transform: translate(0%);
+	}
+#booking-button {
+	margin-bottom: 30px;
+}
+	.intro {
+		padding-bottom: 3rem;
+		padding-top: 2rem;
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr;
+		margin: 0 auto;
+	}
+
+	.about-me p {
+		width: 200px;
+		font-size: 15px;
+		padding-left: 1rem;
+	}
+
+	.about-me h2 {
+		font-size: 25px;
+	}
+	.booking input[type="date"],
+	.booking input[type="time"] {
+	margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    border: 3px solid black;
+    padding: 5px;
+    width: 50px;
+}
+}
